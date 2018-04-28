@@ -1,0 +1,93 @@
+#header{
+     position: relative;
+     margin: 0 auto;
+     width:100%;
+     min-width: 1090px;
+ }
+ #headerLive{
+     width: 17%;
+     float: left;
+     overflow: hidden;
+ }
+ #headerNavigation{
+     margin: 0 auto;
+     width: 66%;
+     float: left;
+ }
+ #headerScores{
+     width: 17%;
+     float: left;
+ }
+ #levelNavigation{
+     width: 700px;
+     position: relative;
+     display: block;
+     margin: 0px auto;
+     padding: 0px;
+     list-style: none;
+ }
+ #levelNavigation > li{
+  float: left;
+  height: 25px;
+  width: 20%;
+  background: rgba(68, 113, 209, 0.8);
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: inset 0px 0px 9px rgb(0, 0, 0);
+  text-align: center;
+ }
+ 
+ #levelNavigation > li:hover{
+     height: 25px;
+     box-shadow: inset 0px 0px 5px rgb(255, 244, 144);
+     cursor: context-menu;
+ }
+ #levelNavigation > li h2{
+     margin: 0px;
+     padding: 0px;
+     font-size: 19px;
+ }
+ #levelNavigation > li > ul{
+     position:absolute;
+     width:20%;
+     z-index: 3;
+     display:none;
+     margin: 0 auto;
+     padding:0;
+     list-style: none;
+     background: rgba(68, 113, 209, 8.5);
+     box-shadow: 0px 0px 3px rgb(6, 1, 24),
+     inset 0px 0px 1px rgb(6, 1, 24);
+     text-indent: 0px;
+ 
+ }
+ #levelNavigation > li > ul > p{
+     background: rgba(172, 174, 67, 1);
+     margin: 0 auto;
+     padding: 0;
+ }
+ #levelNavigation > li:hover > ul{
+     display:block;
+ }
+ #levelNavigation > li > ul > li{
+     margin: 0 auto;
+     padding: 8px 0px;
+     display:block;
+     clear:none;
+     box-shadow: 0px 0px 3px rgb(0, 25, 79);
+ }
+ #levelNavigation > li > ul > li[data-exist="true"]{
+     background: rgb(67, 67, 67)
+ }
+ #levelNavigation > li > ul > li:hover{
+     background: rgb(84, 127, 218);
+     box-shadow: 0px 0px 5px rgb(0, 25, 79);
+     text-shadow: 0px 0px 3px rgb(230, 255, 9);
+     cursor: pointer;
+ }
+ #levelNavigation > li > ul > li[data-exist="true"]:hover{
+     background: rgb(67, 67, 67);
+     text-shadow: 0px 0px 0px transparent;
+ }
+ #levelNavigation > li > ul > li > p{ /* HIDDEN */
+     display:none;
+ }

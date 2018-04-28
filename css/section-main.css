@@ -1,0 +1,145 @@
+#content{
+     margin: 0 auto;
+     float:left;
+     width:66%;
+ }
+ #selectedDocument{
+     margin: 10px 8px 0px 10px;
+     padding:0;
+     text-align: left;
+     color: rgb(49, 53, 63);
+ }
+ #selectedDocument span{
+     color: black;
+     font-size: 120%;
+ }
+ 
+ #marginContainer{
+     position: relative;
+     padding:15px 0px;
+ }
+ 
+ #copyContainChars{
+     z-index: 0;
+     position:absolute;
+     right:0; left:0;
+     margin: 0px auto;
+     top: 63px;
+     
+     width: 580px;
+     height: 1px;
+     border-radius: 1%;
+     box-shadow:
+     -44px 18px 24px 7px rgb(0, 0, 0),
+     44px -18px 24px 7px rgb(0, 0, 0);
+     transform: rotate(-4deg);
+ }
+ #copyContainChars2{
+     z-index: 0;
+     position:absolute;
+     right:0; left:0;
+     margin: 0px auto;
+     top: 63px;
+     
+     width: 580px;
+     height: 1px;
+     border-radius: 1%;
+     box-shadow:
+     -44px -18px 24px 7px rgb(0, 0, 0),
+     44px 18px 24px 7px rgb(0, 0, 0);
+     transform: rotate(4deg);
+ }
+ scores{
+     border: 1px solid rgb(185, 255, 87)
+ }
+ allCharacters{
+     background:  rgb(151, 153, 181);
+ }
+ correctCharacters{
+     background:  rgb(59, 172, 68);
+ }
+ incorrectCharacters{
+     background:  rgb(193, 62, 62);
+ }
+ 
+ #ContainChars{
+     position: relative;
+     z-index:2;
+     margin: 0 auto;
+     padding: 3px 0px;
+     border-radius: 6px;
+     width: 700px;
+     height: 90px;
+     overflow: hidden;
+     box-shadow: 
+     inset 1px 0px 2px rgba(5, 32, 68, 0.4),
+     inset 4px 0px 2px rgba(190, 213, 255, 0.5),
+     inset -1px 0px 2px rgba(5, 32, 68, 0.4),
+     inset -4px 0px 2px rgba(190, 213, 255, 0.5),
+     
+     inset 0px -1px 2px rgba(255, 255, 255, 0.8),
+     inset 0px 1px 2px rgba(255, 255, 255, 0.8);
+ background: -moz-linear-gradient(left, rgba(139, 176, 226, 1) 0%, rgba(166, 202, 248, 1) 50%, rgba(139, 176, 226, 1) 100%);
+ background: -webkit-linear-gradient(left, rgba(139, 176, 226, 1) 0%, rgba(166, 202, 248, 1) 50%, rgba(139, 176, 226, 1) 100%);
+ background: linear-gradient(to right, rgba(139, 176, 226, 1) 0%, rgba(166, 202, 248, 1) 50%, rgba(139, 176, 226, 1) 100%);
+ }
+ #ContainChars > div{
+     text-align: center;
+     position: relative;
+     height: 30px;
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ #ContainChars div.firstBlock{
+     font-size: 26px;
+ }
+ div.otherBlock{
+   color: rgb(107, 24, 24, 0.4);
+ }
+ div.otherBlock p span.wellKey{
+     color: rgba(5, 123, 15, 0.4);
+ }
+ div.otherBlock p span.badKey{
+     color: rgb(107, 24, 24, 0.3);
+     background-color: rgba(250, 10, 10, 0.1);
+ }
+ div.otherBlock span[name="iconEnter"]{
+     color: rgb(121, 7, 41);
+ }
+ .result{
+     display: inline;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .wellKey{
+     color: rgba(5, 123, 15, 1);
+ }
+ .badKey{
+     color: rgba(189, 3, 3, 0.9);
+     background-color: rgba(250, 10, 10, 0.2);
+ }
+ .currentKey{
+     color: blue;
+     text-decoration: underline;
+     display: inline;
+     margin: 0;
+     padding: 0;
+ }
+ .created{
+     display: inline;
+     line-height: 30px;
+ }
+ .created p{
+     border: 1px solid darkgoldenrod;
+ }
+ 
+ #input-text{
+     position: relative;
+     z-index: 1;
+     display: block;
+     margin: 20px auto;
+     width: 660px; 
+     font-family: 'Times New Roman', Times, serif;
+     box-shadow: 0px 0px 18px rgba(0, 30, 94, 0.5);
+ }
